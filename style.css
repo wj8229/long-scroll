@@ -1,0 +1,56 @@
+#background{
+  background-image: url("background.png");
+  height:10000px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index:-1000;
+
+  position:relative;
+
+}
+#canvas{
+  border:0px solid red;
+  width:600px;
+  height:10000px;
+  margin:0 auto;
+  z-index:-1000;
+
+  position:relative;
+
+}
+
+
+
+#counter{
+  top:1000px;
+  left:10px;
+  position:absolute;
+  z-index:-1;
+  opacity:0.9;
+}
+#counter2{
+  top:10000px;
+  left:100px;
+  position:absolute;
+  z-index:-1;
+  opacity:0.9;
+}
+h1{  border:2px solid blue;
+     background-color:yellow;
+     position:absolute;
+     width:200px;
+     height:30px;
+     top:120px;
+     left:100px;
+     z-index:-2;
+     opacity:0.9;
+}
+
+#icon {width:300px;
+  border:0px;
+  position:relative;
+  top:200px;
+  left:200px;
+}

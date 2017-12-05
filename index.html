@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2017 by ianpollock (http://jsbin.com/yebemes/3/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<meta name="description" content="demo">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+  <title>Aliens! by Andrew Salcedo</title>
+<style id="jsbin-css">
+
+
+/* relative, absolute, fixed, static
+http://www.barelyfitz.com/screencast/html-training/css/positioning/
+http://jsbin.com/yicata/2/
+*/
+</style>
+</head>
+<body>
+  <div id="background">
+  <div id="canvas">
+    <div id="counter"> <img src="planet.png"> </div>
+
+    <img src="ship.png" alt="" id="icon">
+<div id="counter2"> <img src="planet2.png"> </div>
+  </div>
+
+
+<script id="jsbin-javascript">
+var canvas = document.getElementById("canvas");
+var counter = document.getElementById("counter");
+var icon = document.getElementById("icon");
+
+window.onscroll = function(){
+
+
+  var y = window.pageYOffset;
+
+  console.log(y);
+
+  counter.style.top = 600 + y * .70 + "px";
+
+
+  if (y > 2000) {
+    counter.src="planet.png";
+
+
+  }else{
+
+
+    counter.src="planet.png";
+  }
+
+    icon.style.top = 200 + y  + "px";
+
+  if(y > 2000){
+
+      icon.src="ship.png";
+
+  }else{
+
+  icon.src="ship.png";
+ }
+<!-- second planet-->
+ counter2.style.top = 1700 + y * .75 + "px";
+
+
+ if (y > 2000) {
+   counter2.src="planet2.png";
+
+
+ }else{
+
+
+   counter2.src="planet2.png";
+ }
+
+};
+</script>
+</body>
+</html>
